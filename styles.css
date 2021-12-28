@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "TW Cen MT Bold Italic";
+    src: url(./Fonts/Twentieth\ Century\ MT\ Bold\ Italic.ttf);
+}
+@font-face {
+    font-family: "TW Cen MT Extra Bold Condensed";
+    src: url(./Fonts/Twentieth\ Century\ MT\ Extra\ Bold\ Condensed.ttf);
+}
+@font-face {
+    font-family: "TW Cen MT Medium Italic";
+    src: url(./Fonts/Twentieth\ Century\ MT\ Medium\ Italic.ttf);
+}
+@font-face {
+    font-family: "TW Cen MT Light";
+    src: url(./Fonts/Twentieth\ Century\ MT\ Light.ttf);
+}
+@font-face {
+    font-family: "Trebuchet MS";
+    src: url(./Fonts/trebuc.ttf);
+}
+
+body { 
+    /* Sets the background of the page to an image. */
+    background-image: url(./Images/background_image.png);
+    /* Makes image responsive */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* LOGO */
+.logo {
+    float: left;
+}   .logo img {
+    padding: 3px;
+}
+
+/* DEBUG HEADER */
+.header {
+    float: left;
+    padding-left: 0.2%;
+}   .header a {
+    font-family: "TW Cen MT Extra Bold Condensed";
+    font-size: 55px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    text-decoration: none;
+    /* Shadow opacity controlled by alpha component of rgba */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* NAV BAR */
+.topnav {
+    float: left;
+    padding-left: 2.5%;
+}   .topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}   .topnav li {
+    float: left;
+}   .topnav li a {
+    font-family: "TW Cen MT Bold Italic";
+    font-size: 25px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+    /* Shadow opacity controlled by alpha component of rgba */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}   .topnav li a:hover {
+    display: block;
+    background-color: #1BBE9F;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    margin-top: 1.1%;
+    margin-right: 18%;
+    float: right;
+}   .search-bar input {
+    width: 130%;
+    border: none;
+    border-right: none;
+    padding: 5px;
+    border-radius: 25px;
+    outline: none;
+    color: white;
+    padding-left: 30px;
+    background: url(./Images/search_icon.png) no-repeat left, white;
+    background-position: 5px ;
+    background-size: 15px;
+    /* Shadow opacity controlled by alpha component of rgba */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* MAIN CONTENT */
+.main-content {
+    width: 65%;
+    height: 300px;
+    position: absolute;
+    top: 15%; 
+    left: 4%;
+}   .main-content h1 {
+    text-align: left;
+    float: left;
+}   .main-content h2 {
+    text-align: left;
+    float: left;
+    position: relative;
+    top: -4%;
+    left: 1.5%;
+}   .main-content h3 {
+    position: relative;
+    top: 28%;
+}   .main-content h4 {
+    position: relative;
+    top: 30%;
+    left: -27%;
+}   .main-content p {
+    position: relative;
+    left: 0.1%;
+}   .main-content button {
+    font-family: "TW Cen MT Bold Italic";
+    font-size: 25px;
+    color: #1BBE9F;
+    margin-right: 0.6%;
+    background-color: white;
+    border-radius: 25px;
+    border: #1BBE9F;
+    position: relative;
+    top: 6%;
+    height: 40px;
+    width: 100px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}   .main-content #minecraft {
+    position: relative;
+    top: -132.5%;
+    height: 150%;
+    width: auto;
+    float: right;
+    background-color: #fff;
+    padding: 2px;
+}   .main-content #cities-skylines {
+    position: relative;
+    top: -132.5%;
+    height: 70%;
+    width: auto;
+    float: right;
+    background-color: #fff;
+    padding: 2px;
+    margin-right: 11px;
+}   .main-content #transport-fever2 {
+    position: relative;
+    top: -57%;
+    left: 28.1%;
+    height: 74.5%;
+    width: 27%;
+    float: right;
+    background-color: #fff;
+    padding: 2px;
+    margin-right: 11px;
+}
+
+h1 {
+    font-family: "TW Cen MT Extra Bold Condensed";
+    font-size: 65px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-family: "TW Cen MT Medium Italic";
+    font-size: 65px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+h3 {
+    font-family: "TW Cen MT Light";
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+h4 {
+    font-family: "Trebuchet MS";
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+  
+p {
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
