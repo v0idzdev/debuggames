@@ -194,3 +194,44 @@ p {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
+form {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+label {
+    margin-right: 15px;
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    color: #1BBE9F;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    width: 522px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    color: #1BBE9F;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    width: 500px;
+}
+
+input[type="text"]::placeholder {
+    color: #1BBE9F;
+}
+
