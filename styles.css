@@ -197,6 +197,32 @@ body {
     border: 3px solid white;
 }
 
+.games-image-container {
+    position: absolute;
+    top: 325px;
+    left: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.games-image-container div {
+    width: 200px;
+    height: 300px;
+    margin: 8px;
+}
+
+.games-image-container div img {
+    width: 200px;
+    height: 300px;
+    border: 3px solid white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
 /* Horizontally aligns items */
 .horizontal-align {
     display: inline-block;
