@@ -139,8 +139,8 @@ body {
 #main-text {
     position: absolute;
     float: left;
-    top: 20%;
-    margin-left: 3.5%;
+    top: 180px;
+    margin-left: 68px;
 }
 
 #main-text div {
@@ -174,7 +174,7 @@ body {
 
 .row {
     position: absolute;
-    top: 21%;
+    top: 190px;
     right: 200px;
     display: flex;
     flex-wrap: wrap;
