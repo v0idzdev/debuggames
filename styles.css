@@ -95,14 +95,14 @@ body {
 
 /* SEARCH BAR */
 #search-bar {
-    position:fixed;
-    margin-top: 1.1%;
-    margin-left: 70%;
     float: right;
 }   
 
 #search-bar input {
-    width: 130%;
+    position: fixed;
+    right: 200px;
+    top: 13px;
+    width: 350px;
     border: none;
     border-right: none;
     padding: 5px;
@@ -219,7 +219,7 @@ select {
     width: 522px;
 }
 
-input {
+input[type="text"] {
     padding: 10px;
     margin: 10px 0;
     border: 2px solid white;
