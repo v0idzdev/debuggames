@@ -108,13 +108,31 @@ body {
     padding: 5px;
     border-radius: 25px;
     outline: none;
-    color: white;
+    color: #1BBE9F;
     padding-left: 30px;
     background: url(./Images/search_icon.png) no-repeat left, white;
     background-position: 5px ;
     background-size: 15px;
     /* Shadow opacity controlled by alpha component of rgba */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+#search-bar button {
+    font-family: "TW Cen MT Bold Italic";
+    font-size: 21px;
+    color: #1BBE9F;
+    margin-right: 0.6%;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 25px;
+    position: fixed;
+    right: 70px;
+    top: 8px;
+    width: 350px;
+    border: none;
+    height: 31.5px;
+    width: 100px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* MAIN INDEX PAGE TEXT */
@@ -152,6 +170,31 @@ body {
     height: 40px;
     width: 100px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.row {
+    position: absolute;
+    top: 21%;
+    right: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    padding: 0 4px;
+    flex-shrink: 0;
+}
+
+.column {
+    width: 350px;
+    padding: 0 8px;
+}
+
+.column img {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+    width: 100%;
+    border: 3px solid white;
 }
 
 /* Horizontally aligns items */
