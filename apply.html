@@ -7,6 +7,31 @@
         <meta name="description" content="This is the website for DEBUG Games!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <script>
+            function validateForm() {
+                var x = document.forms["applicationForm"]["jobRole"].value;
+                if (x == "") {
+                    alert("Job Role must be selected.");
+                    return false;
+                }
+                var x = document.forms["applicationForm"]["fname"].value;
+                if (x == "") {
+                    alert("First name must be filled out.");
+                    return false;
+                }
+                var x = document.forms["applicationForm"]["lname"].value;
+                if (x == "") {
+                    alert("Last name must be filled out.");
+                    return false;
+                }
+                var x = document.forms["applicationForm"]["email"].value;
+                if (x == "") {
+                    alert("Email must be filled out.");
+                    return false;
+                }
+                return true;
+            }
+        </script>
     </head>
 
     <body>
@@ -30,18 +55,18 @@
             <div>
                 <h1 class="horizontal-align">NOW</h1>
             </div>
-            <form>  
-                <select>  
+            <form name="applicationForm" action="/action_page.php" onsubmit="return validateForm()" method="post">  
+                <select name="jobRole">  
                     <option disabled hidden selected>Job Role</option>
                     <option value="Programmer">Programmer</option>  
                     <option value="Designer">Designer</option>  
                     <option value="Tester">Tester</option> 
                 </select><br>
-                <input type="text" placeholder="First Name"><br>
-                <input type="text" placeholder="Last Name"><br>
-                <input type="text" placeholder="Email Address"><br>
+                <input type="text" placeholder="First Name" name="fname"><br>
+                <input type="text" placeholder="Last Name" name="lname"><br>
+                <input type="text" placeholder="Email Address" name="email"><br><br>
+                <input type="submit" value="Submit"></input>
             </form> 
-            <a href="#"><button type="button">Apply</button></a>
         </div>
     </body>
 </html>
