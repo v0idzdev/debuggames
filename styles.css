@@ -575,6 +575,10 @@ input[type="submit"] {
         border: 3px solid white;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
     }
+
+    #careers_cs_imgs {
+        margin-top: 100px;
+    }
   
 }
 
