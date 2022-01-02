@@ -117,6 +117,42 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
+.search-bar-option {
+    display: none;
+    font-family: "TW Cen MT Bold Italic";
+    font-size: 18px;
+    color: #1BBE9F;
+    margin-right: 0.6%;
+    margin-top: 15px;
+    display: block;
+    width: 350px;
+    border: none;
+    border-right: none;
+    padding: 5px;
+    border-radius: 25px;
+    color: #1BBE9F;
+    padding-left: 30px;
+    margin-top: 10px;
+    background-color: white;
+    /* Shadow opacity controlled by alpha component of rgba */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+#search-results {
+    position: fixed;
+    right: 200px;
+    top: 60px;
+    z-index: 10;
+}
+
+#search-results ul {
+    list-style: none;
+}
+
+#search-results li {
+    display: none;
+}
+
 #search-bar button {
     font-family: "TW Cen MT Bold Italic";
     font-size: 21px;

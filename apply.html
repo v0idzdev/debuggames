@@ -48,7 +48,16 @@
             </ul>
         </div>  
         <div id="search-bar">
-            <input type="text" placeholder="">
+            <input id="search-bar-input" onkeyup="searchBar()" type="text" name="search" placeholder="Search...">
+            <ol id="search-results">
+                <li class="search-bar-option"><a href="index.html">Index</a></li>
+                <li class="search-bar-option"><a href="games.html">Browse Games</a></li>
+                <li class="search-bar-option"><a href="cities_skylines.html">Cities: Skylines</a></li>
+                <li class="search-bar-option"><a href="careers.html">Browse Careers</a></li>
+                <li class="search-bar-option"><a href="apply.html">Apply For a Job</a></li>
+            </ol>
+            </div>
+            <script src="search.js"></script>
         </div>
         <div id="main-text">
             <h3>Apply</h3>
