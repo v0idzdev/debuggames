@@ -117,6 +117,18 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
+#search-bar input:hover {
+    border:2px solid #4EC2AA;
+    padding:3px;
+    padding-left: 30px;
+}
+
+#search-bar input:focus {
+    border:2px solid #4EC2AA;
+    padding:3px;
+    padding-left: 30px;
+}
+
 .search-bar-option {
     list-style: none;
     display: none;
@@ -247,6 +259,10 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
+.column img:hover {
+    border:3px solid #4EC2AA;
+}
+
 .games-image-container {
     position: absolute;
     top: 335px;
@@ -271,6 +287,10 @@ body {
     height: 300px;
     border: 3px solid white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.games-image-container div img:hover {
+    border:3px solid #4EC2AA;
 }
 
 /* Horizontally aligns items */
