@@ -389,10 +389,13 @@ input[type="submit"] {
     }
 
     .search-bar-option {
-        font-size: 14px;
         padding-left: 10px;
         width: 110px;
         right: 25px;
+    }
+
+    .search-bar-option a {
+        font-size: 14px;
     }
 
     /* NAV BAR */
@@ -599,9 +602,14 @@ input[type="submit"] {
     }
 
     .search-bar-option {
-        font-size: 16px;
         padding-left: 10px;
         width: 110px;
         right: 25px;
+    }
+
+    .search-bar-option a {
+        font-size: 16px;
+        color: #1BBE9F;
+    
     }
 }
