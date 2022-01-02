@@ -1,3 +1,4 @@
+/* **** OLD SEARCH BAR QUERY CODE ****
 function searchBar() {
 
     // Gets text box input & converts to lower case
@@ -15,9 +16,18 @@ function searchBar() {
             searchOptions[i].style.display="list-item";                 
         }
     }
+} */
+
+function searchBar() {
+    // Creates an array out of all the search options, then gets the input and converts to lowercase
+    let options = [].slice.call(document.getElementsByClassName('search-bar-option'));
+    let input = document.getElementById('search-bar-input').value.toLowerCase();
+
+    // Maps a function that shows/hides the option (depending on whether it contains the input) to each element in the options array
+    options.map((option) => option.style.display = !option.innerHTML.toLowerCase().includes(input) || input == "" ? "none" : "list-item");
 }
 
-/* // Hides search options if search bar isn't focused 
+/* *** HIDES SEARCH OPTIONS WHEN SEARCH BAR ISN'T FOCUSED ON ***
 function onSearchBarFocusLoss() {
     let searchOptions = document.getElementsByClassName('search-bar-option');
 
