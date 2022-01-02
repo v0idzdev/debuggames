@@ -1,21 +1,17 @@
 function searchBar() {
 
-    // Gets the user's input from the input text box on the page
+    // Gets text box input & converts to lower case
     let input = document.getElementById('search-bar-input').value;
     input = input.toLowerCase();
     
-    // Gets all of the possible search options in the HTML file
+    // Gets all of the possible search options in the HTML file & checks them against input
     let searchOptions = document.getElementsByClassName('search-bar-option');
-
-    // Checks if options include the input
     for (var i = 0; i < searchOptions.length; i++) {
 
-        // If they don't, hide them so they're not displayed
+        // If a match is found, show the link, else keep it hidden
         if (!searchOptions[i].innerHTML.toLowerCase().includes(input) || input == "") {
             searchOptions[i].style.display="none";
-        }
-
-        else { // If they do, display it in the list  
+        } else { 
             searchOptions[i].style.display="list-item";                 
         }
     }
