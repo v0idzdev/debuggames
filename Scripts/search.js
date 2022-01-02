@@ -1,4 +1,4 @@
-/* **** OLD SEARCH BAR QUERY CODE ****
+/* **** OLD SEARCH BAR QUERY CODE -- KEEPING IT COMMENTED OUT JUST IN CASE ****
 function searchBar() {
 
     // Gets text box input & converts to lower case
