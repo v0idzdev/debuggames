@@ -19,12 +19,17 @@ function searchBar() {
 } */
 
 function searchBar() {
-    // Creates an array out of all the search options, then gets the input and converts to lowercase
+    const updateVisibility = (option) => option.style.display = !option.innerHTML.toLowerCase().includes(input) || input == "" ? "none" : "list-item"
+    const optionNotVisible = (option) => window.getComputedStyle(option).display === "none"
+
     let options = [].slice.call(document.getElementsByClassName('search-bar-option'));
     let input = document.getElementById('search-bar-input').value.toLowerCase();
 
-    // Maps a function that shows/hides the option (depending on whether it contains the input) to each element in the options array
-    options.map((option) => option.style.display = !option.innerHTML.toLowerCase().includes(input) || input == "" ? "none" : "list-item");
+    let noMatch = options.shift();
+    noMatch.innerHTML = `No results found for "${input}."`;
+
+    options.map(updateVisibility);
+    options.every(optionNotVisible) && input != "" ? noMatch.style.display = "list-item" : noMatch.style.display = "none"
 }
 
 /* *** HIDES SEARCH OPTIONS WHEN SEARCH BAR ISN'T FOCUSED ON ***

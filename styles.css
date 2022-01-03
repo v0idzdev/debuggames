@@ -130,6 +130,10 @@ body {
 }
 
 .search-bar-option {
+    text-decoration: none;
+    font-family: "TW Cen MT Bold Italic";
+    font-size: 18px;
+    color: #1BBE9F;
     list-style: none;
     display: none;
     margin-right: 0.6%;
@@ -151,7 +155,6 @@ body {
     font-family: "TW Cen MT Bold Italic";
     font-size: 18px;
     color: #1BBE9F;
-
 }
 
 .search-bar-option a:hover {
