@@ -10,5 +10,6 @@ function validateForm() {
     }
 
     // Else return true, and submit
+    alert("The form was sumbitted sucessfully.")
     return true;
 }
