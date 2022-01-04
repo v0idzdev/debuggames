@@ -412,6 +412,7 @@ input[type="submit"] {
     }
 
     .search-bar-option {
+        font-size: 14px;
         padding-left: 10px;
         width: 110px;
         right: 25px;
