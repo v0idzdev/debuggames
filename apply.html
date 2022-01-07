@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <title>Apply</title>
-        <meta name="description" content="This is the website for DEBUG Games!">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <!--<script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apply</title>
+    <meta name="description" content="This is the website for DEBUG Games!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!--<script>
             function validateForm() {
                 var x = document.forms["applicationForm"]["jobRole"].value;
                 if (x == "") {
@@ -32,52 +33,53 @@
                 return true;
             }
         </script>-->
-        <script src="./Scripts/validateform.js"></script>
-    </head>
+    <script src="./Scripts/validateform.js"></script>
+</head>
 
-    <body>
-        <div id="logo">
-            <img src="./Images/debug_icon.png" alt="DEBUG Games' logo. A white circle background with a black video-game controller.">
+<body>
+    <div id="logo">
+        <img src="./Images/debug_icon.png" alt="DEBUG Games' logo. A white circle background with a black video-game controller.">
+    </div>
+    <div id="header">
+        <a href="index.html">DEBUG</a>
+    </div>
+    <div id="topnav">
+        <ul>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="careers.html">Careers</a></li>
+        </ul>
+    </div>
+    <div id="search-bar">
+        <input id="search-bar-input" onkeyup="searchBar()" type="text" name="search" placeholder="Search...">
+        <ol id="search-results">
+            <li class="search-bar-option"></li>
+            <li class="search-bar-option"><a href="index.html">Index</a></li>
+            <li class="search-bar-option"><a href="games.html">Browse Games</a></li>
+            <li class="search-bar-option"><a href="./Games Pages/cities_skylines.html">Cities: Skylines</a></li>
+            <li class="search-bar-option"><a href="careers.html">Browse Careers</a></li>
+            <li class="search-bar-option"><a href="apply.html">Apply For a Job</a></li>
+        </ol>
+    </div>
+    <script src="./Scripts/search.js"></script>
+    </div>
+    <div id="main-text">
+        <h3>Apply</h3>
+        <div>
+            <h1 class="horizontal-align">NOW</h1>
         </div>
-        <div id="header">
-            <a href="index.html">DEBUG</a>
-        </div>
-        <div id="topnav">
-            <ul>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="careers.html">Careers</a></li>     
-            </ul>
-        </div>  
-        <div id="search-bar">
-            <input id="search-bar-input" onkeyup="searchBar()" type="text" name="search" placeholder="Search...">
-            <ol id="search-results">
-                <li class="search-bar-option"></li>
-                <li class="search-bar-option"><a href="index.html">Index</a></li>
-                <li class="search-bar-option"><a href="games.html">Browse Games</a></li>
-                <li class="search-bar-option"><a href="cities_skylines.html">Cities: Skylines</a></li>
-                <li class="search-bar-option"><a href="careers.html">Browse Careers</a></li>
-                <li class="search-bar-option"><a href="apply.html">Apply For a Job</a></li>
-            </ol>
-            </div>
-            <script src="./Scripts/search.js"></script>
-        </div>
-        <div id="main-text">
-            <h3>Apply</h3>
-            <div>
-                <h1 class="horizontal-align">NOW</h1>
-            </div>
-            <form id="application-form" name="applicationForm" onsubmit="return validateForm()" method="post">  
-                <select name="Job role">  
+        <form id="application-form" name="applicationForm" onsubmit="return validateForm()" method="post">
+            <select name="Job role">  
                     <option value="None" selected disabled hidden>Job Role</option>
                     <option value="Programmer">Programmer</option>  
                     <option value="Designer">Designer</option>  
                     <option value="Tester">Tester</option> 
                 </select><br>
-                <input type="text" placeholder="First Name" name="First name"><br>
-                <input type="text" placeholder="Last Name" name="Last name"><br>
-                <input type="text" placeholder="Email Address" name="Email"><br><br>
-                <input type="submit" value="Submit">
-            </form> 
-        </div>
-    </body>
+            <input type="text" placeholder="First Name" name="First name"><br>
+            <input type="text" placeholder="Last Name" name="Last name"><br>
+            <input type="text" placeholder="Email Address" name="Email"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
 </html>

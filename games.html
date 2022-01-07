@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <title>Browse Games</title>
-        <meta name="description" content="This is the website for DEBUG Games!">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
 
-    <body>
-        <div id="logo">
-            <img src="./Images/debug_icon.png" alt="DEBUG Games' logo. A white circle background with a black video-game controller.">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse Games</title>
+    <meta name="description" content="This is the website for DEBUG Games!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="logo">
+        <img src="./Images/debug_icon.png" alt="DEBUG Games' logo. A white circle background with a black video-game controller.">
+    </div>
+    <div id="header">
+        <a href="index.html">DEBUG</a>
+    </div>
+    <div id="topnav">
+        <ul>
+            <li><a href="#">Games</a></li>
+            <li><a href="careers.html">Careers</a></li>
+        </ul>
+    </div>
+    <div id="search-bar">
+        <input id="search-bar-input" onkeyup="searchBar()" type="text" name="search" placeholder="Search...">
+        <ol id="search-results">
+            <li class="search-bar-option"></li>
+            <li class="search-bar-option"><a href="index.html">Index</a></li>
+            <li class="search-bar-option"><a href="games.html">Browse Games</a></li>
+            <li class="search-bar-option"><a href="./Games Pages/cities_skylines.html">Cities: Skylines</a></li>
+            <li class="search-bar-option"><a href="careers.html">Browse Careers</a></li>
+            <li class="search-bar-option"><a href="apply.html">Apply For a Job</a></li>
+        </ol>
+    </div>
+    <script src="./Scripts/search.js"></script>
+    </div>
+    <div id="main-text" style="top:165px;">
+        <h3>Browse</h3>
+        <div>
+            <h1 class="horizontal-align">GAMES</h1>
         </div>
-        <div id="header">
-            <a href="index.html">DEBUG</a>
+    </div>
+    <section class='games-image-container'>
+        <div>
+            <img src="./Images/minecraft_gamespage.png" alt="Cover image for the game 'Minecraft'.">
         </div>
-        <div id="topnav">
-            <ul>
-                <li><a href="#">Games</a></li>
-                <li><a href="careers.html">Careers</a></li>     
-            </ul>
-        </div>  
-        <div id="search-bar">
-            <input id="search-bar-input" onkeyup="searchBar()" type="text" name="search" placeholder="Search...">
-            <ol id="search-results">
-                <li class="search-bar-option"></li>
-                <li class="search-bar-option"><a href="index.html">Index</a></li>
-                <li class="search-bar-option"><a href="games.html">Browse Games</a></li>
-                <li class="search-bar-option"><a href="cities_skylines.html">Cities: Skylines</a></li>
-                <li class="search-bar-option"><a href="careers.html">Browse Careers</a></li>
-                <li class="search-bar-option"><a href="apply.html">Apply For a Job</a></li>
-            </ol>
-            </div>
-            <script src="./Scripts/search.js"></script>
+        <div>
+            <img src="./Images/terraria_gamespage.png" alt="Cover image for the game 'Terraria'.">
         </div>
-        <div id="main-text" style="top:165px;">
-            <h3>Browse</h3>
-            <div>
-                <h1 class="horizontal-align">GAMES</h1>
-            </div>
+        <div>
+            <img src="./Images/fifa22_gamespage.png" alt="Cover image for the game 'FIFA 22'.">
         </div>
-        <section class='games-image-container'>
-            <div>
-                <img src="./Images/minecraft_gamespage.png" alt="Cover image for the game 'Minecraft'.">
-            </div>
-            <div>
-                <img src="./Images/terraria_gamespage.png" alt="Cover image for the game 'Terraria'.">
-            </div>
-            <div>
-                <img src="./Images/fifa22_gamespage.png" alt="Cover image for the game 'FIFA 22'.">
-            </div>
-            <div>
-                <img src="./Images/tf2_gamespage.png" alt="Cover image for the game 'Transport Fever 2'.">
-            </div>
-            <div>
-                <a href="cities_skylines.html">
-                    <img src="./Images/cs_gamespage.png" alt="Cover image for the game 'Cities: Skylines'.">
-                </a>
-            </div>
-        </section>
-    </body>
+        <div>
+            <img src="./Images/tf2_gamespage.png" alt="Cover image for the game 'Transport Fever 2'.">
+        </div>
+        <div>
+            <a href="./Games Pages/cities_skylines.html">
+                <img src="./Images/cs_gamespage.png" alt="Cover image for the game 'Cities: Skylines'.">
+            </a>
+        </div>
+    </section>
+</body>
+
 </html>
