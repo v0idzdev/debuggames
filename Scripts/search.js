@@ -4,7 +4,7 @@ function searchBar() {
     // Gets text box input & converts to lower case
     let input = document.getElementById('search-bar-input').value;
     input = input.toLowerCase();
-    
+
     // Gets all of the possible search options in the HTML file & checks them against input
     let searchOptions = document.getElementsByClassName('search-bar-option');
     for (var i = 0; i < searchOptions.length; i++) {
@@ -12,8 +12,8 @@ function searchBar() {
         // If a match is found, show the link, else keep it hidden
         if (!searchOptions[i].innerHTML.toLowerCase().includes(input) || input == "") {
             searchOptions[i].style.display="none";
-        } else { 
-            searchOptions[i].style.display="list-item";                 
+        } else {
+            searchOptions[i].style.display="list-item";
         }
     }
 } */
@@ -67,7 +67,6 @@ const hideOptions = (option) => option.style.display = "none";
 document.addEventListener('click', (event) => {
     options.map(event.target.matches('.search-option-link') ? showOptions : hideOptions);
 });
-
 
 /* // If search bar link is clicked on, hide search bar options
 function onSearchOptionClick() {
