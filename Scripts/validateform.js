@@ -19,7 +19,7 @@ function validateForm() {
 function validateForm() {
     let fields = [].slice.call(document.getElementById('application-form').elements);
     let select = fields.shift();
-    
+
     if (select.options[select.selectedIndex].value == "None") {
         alert("Job role must be filled out.");
         return false;
@@ -32,6 +32,25 @@ function validateForm() {
         return false;
     }
 
-    alert("The form was sumbitted sucessfully.")
+    let email = document.getElementById('email-input');
+
+    if (validateEmail(email) == false) {
+        alert('Email is invalid');
+        return false;
+    }
+
+    alert("The form was submitted successfully.");
     return true;
+}
+
+function validateEmail(email) {
+    const validDomains = [".com", ".net", ".uk", ".us", ".org"];
+
+    if (email.value.includes('@')) {
+        for (let i = 0; i < validDomains.length; i++) {
+            return (email.value.endsWith(validDomains[i]) ? true : false)
+        }
+    }
+
+    return false;
 }
