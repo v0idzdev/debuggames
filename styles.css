@@ -405,9 +405,9 @@ input[type="submit"] {
 
 #tagline-title select {
     position: absolute;
-    top: 91px;
+    top: 93px;
     left: 224px;
-    font-size: 16px;
+    font-size: 14px;
     padding:4px;
     width: 115px;
 }
