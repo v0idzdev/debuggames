@@ -403,6 +403,31 @@ input[type="submit"] {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
+#tagline-title select {
+    position: absolute;
+    top: 91px;
+    left: 224px;
+    font-size: 16px;
+    padding:4px;
+    width: 115px;
+}
+
+.default {
+    display: block;
+}
+
+.programmer {
+    display: none;
+}
+
+.designer {
+    display: none;
+}
+
+.tester {
+    display: none;
+}
+
 /* Re-structures site for mobile devices */
 @media (max-width: 575.98px) { 
 
@@ -594,6 +619,15 @@ input[type="submit"] {
     .games-image-container div img {
         width: 150px;
         height: 225px;
+    }
+
+    #tagline-title select {
+        position: absolute;
+        top: 66px;
+        left: 199px;
+        font-size: 13px;
+        padding:2px;
+        width: 110px;
     }
 }
 

@@ -46,6 +46,12 @@
         <h3>Browse</h3>
         <div id="tagline-title">
             <h1 class="horizontal-align">CAREERS</h1>
+            <select id="careers-page-select" name="Job role" onchange="onOptionSelect()">  
+                <option value="None" selected disabled hidden>Job Role</option>
+                <option value="Programmer">Programmer</option>  
+                <option value="Designer">Designer</option>  
+                <option value="Tester">Tester</option> 
+            </select><br>
 
         </div>
         <h4>
@@ -53,7 +59,10 @@
 
 
         </h4>
-        <p>Become a fully-fledged game developer,<br> by becoming an apprentice today.</p>
+        <p class="default">Become a fully-fledged game developer,<br> by becoming an apprentice today.</p>
+        <p class="programmer">Solve complex problems and develop your<br> critical thinking skills.</p>
+        <p class="designer">Harness your creativity and put your<br> artistic skills to the test.</p>
+        <p class="tester">At DEBUG Games, we hold ourselves to<br> rigourous quality standards.</p>
             <section class='mobile-image-container'>
                 <div>
                     <img src="./Images/careers_mobile_1.jpg" alt="Some people at a computer.">
@@ -65,9 +74,13 @@
                     <img src="./Images/careers_mobile_3.jpg" alt="Someone at a computer.">
                 </div>
             </section>
-        <p> Or perhaps you'd like to become a game<br> designer? Vacancies are available now -<br> click 'apply' below!<br></p>
+        <p class="default"> Or perhaps you'd like to become a game<br> designer? Vacancies are available now -<br> click 'apply' below!<br></p>
+        <p class="programmer"> With DEBUG Games, you'll be developing new,<br> cutting edge games with C++ and GLSL. <br> Salaries start at £37,000.<br></p>
+        <p class="designer"> With DEBUG Games, you'll be taking part in,<br> the forefront of innovative game design. <br> Salaries start at £23,000.<br></p>
+        <p class="tester"> As a tester at DEBUG Games, you'll be ensuring<br> that our games are bug free & well made. <br> Salaries start at £18,000.<br></p>
         <a href="apply.html"><button type="button">Apply</button></a>
     </div>
+    <script src="./Scripts/careerspage.js"></script>
     <!-- IMAGE GRID -->
     <div id="careers_cs_imgs" class="row" style="top: 210px;">
         <div class="column">
